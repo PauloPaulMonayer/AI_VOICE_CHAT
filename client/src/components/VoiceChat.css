@@ -1,0 +1,133 @@
+/* VoiceChat.css */
+
+/* עיצוב הכרטיס הראשי */
+.voice-chat-card {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* כותרת העמוד */
+.chat-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+/* כפתור התחלת שיחה */
+.start-chat-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.start-chat-btn:hover {
+  background-color: #ffffff;
+}
+
+/* סטטוס ההאזנה והטקסט שהוקלד */
+.status-info p {
+  margin: 0.5rem 0;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+/* אזור תגובת ה-AI */
+.audio-response {
+  margin-top: 1.5rem;
+}
+
+.audio-response h4 {
+  margin-bottom: 0.5rem;
+  color: #1976d2;
+  font-size: 1.2rem;
+}
+
+/* נגן האודיו */
+.audio-player {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+/* טקסט טיפ */
+.tip-text {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #ffffff;
+  font-style: italic;
+}
+
+/* הודעת שגיאה */
+.error-title {
+  font-size: 1.5rem;
+  color: red;
+}
+
+/* מקטע הנחיות */
+.guidelines {
+  margin-top: 2rem;
+  text-align: left;
+  background-color: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.guidelines h3 {
+  margin-bottom: 1rem;
+  color: #1976d2;
+  font-size: 1.3rem;
+}
+
+.guidelines ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+.guidelines li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.guidelines li strong {
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .voice-chat-card {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .chat-title {
+    font-size: 1.8rem;
+  }
+
+  .start-chat-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .status-info p {
+    font-size: 0.9rem;
+  }
+
+  .tip-text {
+    font-size: 0.8rem;
+  }
+
+  .guidelines h3 {
+    font-size: 1.1rem;
+  }
+}

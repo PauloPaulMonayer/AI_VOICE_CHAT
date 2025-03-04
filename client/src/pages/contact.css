@@ -1,0 +1,79 @@
+/* Container for the Contact Page */
+.contact-page {
+  min-height: 100vh;
+  background: url("../assets/back2.png") center/cover no-repeat;
+  padding: 3rem 1rem;
+  color: #333;
+}
+
+/* מרכז את התוכן ומגביל את הרוחב */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* כותרת ראשית */
+.contact-title {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+/* כותרת משנה */
+.contact-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+/* טופס יצירת קשר */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #fafafa;
+  padding: 2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+/* תוויות לטופס */
+.contact-form label {
+  font-weight: bold;
+  color: #222;
+}
+
+/* שדות קלט וטקסט */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+/* התאמת גובה לתיבת הטקסט */
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* כפתור שליחה */
+.btn-submit {
+  background-color: #111;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #333;
+}

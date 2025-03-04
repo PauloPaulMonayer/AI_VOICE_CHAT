@@ -1,0 +1,117 @@
+/*.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  z-index: 100;
+}*/
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent; /* שקוף */
+  position: absolute; /* מאפשר לו להיות מעל התוכן */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  z-index: 1000; /* שומר שהניווט יישאר מעל התוכן */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: transparent;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* אייקון ההמבורגר */
+.hamburger {
+  display: none; /* נסתר במסכים גדולים, יופיע במסכים קטנים */
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+/* קישורי הניווט ברירת מחדל: שולחניים */
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-links a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 0.25rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-size: 20px;
+}
+
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+/* ============== Media Query: מסכים קטנים ============== */
+@media (max-width: 768px) {
+  /* מציגים את ההמבורגר ומסתירים את הקישורים */
+  .hamburger {
+    display: flex;
+  }
+
+  /* מסתירים את navbar-links במסכים קטנים (ברירת מחדל) */
+  .navbar-links {
+    position: absolute;
+    top: 70px; /* מתחת ל-navbar */
+    right: 0;
+    background-color: #000;
+    flex-direction: column;
+    gap: 1rem;
+    width: 200px;
+    padding: 1rem;
+    transform: translateX(100%); /* מוסתר ימינה */
+    transition: transform 0.3s ease;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  }
+
+  /* כשהתפריט ב-state "open" נראה אותו */
+  .navbar-links.open {
+    transform: translateX(0);
+  }
+}

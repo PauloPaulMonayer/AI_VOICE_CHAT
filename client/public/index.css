@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "H K Grotesk";
+  src: url("/fonts/HKGrotesk-Regular.woff2") format("woff2"),
+    url("/fonts/HKGrotesk-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Canva Sans";
+  src: url("/fonts/CanvaSans-Regular.woff2") format("woff2"),
+    url("/fonts/CanvaSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Questrial", "H K Grotesk", "Canva Sans", sans-serif;
+}

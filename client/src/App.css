@@ -1,0 +1,62 @@
+/* App.css */
+
+/* אפס הגדרות ברירת מחדל */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* הטמעת פונט (אופציונלי) */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+/* עיצוב בסיסי ל-Body */
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  background: transparent;
+  color: #333;
+}
+
+/* קישורים (בכלל האפליקציה) */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* מיכל ראשי שיאפשר Footer להידחף למטה */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* כפתורים כלליים */
+.btn {
+  display: inline-block;
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #145ea8;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  background: transparent;
+}

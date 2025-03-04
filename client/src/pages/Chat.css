@@ -1,0 +1,25 @@
+/* איפוס בסיסי של html/body כדי למנוע רווחים לא רצויים */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: none;
+}
+.chat-page {
+  min-height: 100vh;
+  background: url("../assets/back2.png") no-repeat center center;
+  background-size: cover;
+}
+
+.voice-chat-card {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+header,
+nav {
+  margin: 0;
+  padding: 0;
+  background: transparent; /* אם תרצה */
+}
